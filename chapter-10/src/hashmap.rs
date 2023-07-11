@@ -50,7 +50,9 @@ pub fn iter() {
     map.insert("k1".to_string(), "v1".to_string());
     map.insert("k2".to_string(), "v2".to_string());
 
-    for (k, v) in map {
+    for (k, v) in &map {
         println!("{} : {}", k, v);
     }
+
+    println!("map is {:?}", map);
 }
